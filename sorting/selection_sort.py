@@ -1,16 +1,16 @@
-"""Selection Sort: Is a sorting algorith, that use to sort the array. Initially it start assuming the 0 index is
+""" Selection Sort: Is a sorting algorithm, that use to sort the array. Initially, it start assuming the 0 index is
 minimum value while iterating over the list, will update the minimum index after one complete iteration we get minimum
-we just swap the value after completing all iterations we get sorted array"""
+we just swap the value after completing all iterations we get sorted array """
 
 
 def selection_sort(arr):
-    # Iterating through list
+    # Iterating through the list
     for i in range(len(arr) - 1):
-        # Initial we assume the current value is minimum value
+        # Initial we assume the current value is the minimum value
         min_index = i
         # Initiating another iterations from i + 1 index
         for j in range(i + 1, len(arr)):
-            # will check if the j value is less than minimum value
+            # will check if the j value is less than the minimum value
             if arr[j] < arr[min_index]:
                 # if j is less than min_index value, we update the index
                 min_index = j
